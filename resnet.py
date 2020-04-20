@@ -136,6 +136,8 @@ def resnet32():
 def resnet44():
     return ResNet(BasicBlock, [7, 7, 7])
 
+def resnet50():
+    return models.resnet50(pretrained=False)
 
 def resnet56():
     return ResNet(BasicBlock, [9, 9, 9])
